@@ -7,19 +7,19 @@
       name="description"
       content="Beautiful Applesauce makes small, useful apps that respect your time. Count This is the first alpha app."
     />
-    <meta name="theme-color" content="#fbf7ef" />
+    <meta name="theme-color" content="#fbf8f1" />
     <title>Beautiful Applesauce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body class="home-page">
-    <main class="page">
-      <section class="hero-section">
+    <main class="landing">
+      <section class="mock-hero" aria-label="Beautiful Applesauce">
         <div class="hero-copy">
           <div class="title-wrap">
             <h1 class="hero-title">
@@ -32,32 +32,29 @@
           <p class="hero-lede">We make small, useful apps that respect your time.</p>
 
           <form class="early-access" id="signup-form">
-            <div class="signup-row">
-              <label class="signup-field" for="signup-email">
-                <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <rect x="3" y="5" width="18" height="14" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.7" />
-                  <path d="M4.5 7.4 12 13.1 19.5 7.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <input
-                  id="signup-email"
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email for early access"
-                  autocomplete="email"
-                />
-              </label>
-
-              <button type="submit" class="primary-button">
-                <span>Get early access</span>
-                <span aria-hidden="true">&rarr;</span>
-              </button>
-            </div>
+            <label class="signup-field" for="signup-email">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M5 8 12 13.2 19 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <input
+                id="signup-email"
+                name="email"
+                type="email"
+                placeholder="Enter your email for early access"
+                autocomplete="email"
+              />
+            </label>
+            <button type="submit" class="primary-button">
+              <span>Get early access</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
           </form>
 
           <a class="ghost-button" href="/links">
             <svg class="ghost-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
-                d="M10 13.5 13.5 10m-5.2 4.7-1.4 1.4a3 3 0 0 1-4.2-4.2l1.6-1.6a3 3 0 0 1 4.2 0m5.8 0 1.4-1.4a3 3 0 1 1 4.2 4.2l-1.6 1.6a3 3 0 0 1-4.2 0"
+                d="M10.2 13.8 13.8 10.2m-5.6 4.9-1.2 1.2a3.1 3.1 0 0 1-4.4-4.4l1.5-1.5a3.1 3.1 0 0 1 4.4 0m7.3-1.5 1.2-1.2a3.1 3.1 0 0 1 4.4 4.4l-1.5 1.5a3.1 3.1 0 0 1-4.4 0"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.7"
@@ -69,200 +66,60 @@
           </a>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <svg class="jar-illustration" viewBox="0 0 700 640" role="presentation">
-            <defs>
-              <linearGradient id="jarGlass" x1="0%" x2="0%" y1="0%" y2="100%">
-                <stop offset="0%" stop-color="#ffd79d" stop-opacity="0.98" />
-                <stop offset="38%" stop-color="#f2ad4d" stop-opacity="0.94" />
-                <stop offset="100%" stop-color="#e49f34" stop-opacity="0.98" />
-              </linearGradient>
-              <linearGradient id="jarLabel" x1="0%" x2="0%" y1="0%" y2="100%">
-                <stop offset="0%" stop-color="#fff1d8" />
-                <stop offset="100%" stop-color="#f4e1bd" />
-              </linearGradient>
-              <linearGradient id="spoonMetal" x1="0%" x2="100%" y1="0%" y2="100%">
-                <stop offset="0%" stop-color="#d6c7ac" />
-                <stop offset="45%" stop-color="#8f7b5d" />
-                <stop offset="100%" stop-color="#e3d7bf" />
-              </linearGradient>
-              <filter id="jarShadow" x="-20%" y="-20%" width="160%" height="170%">
-                <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#7a5e28" flood-opacity="0.18" />
-              </filter>
-            </defs>
-
-            <ellipse cx="462" cy="250" rx="180" ry="178" fill="#f6e7c5" />
-            <g transform="translate(0 8)" filter="url(#jarShadow)">
-              <ellipse cx="490" cy="510" rx="98" ry="20" fill="#af8b54" opacity="0.18" />
-              <g transform="translate(370 158)">
-                <path
-                  d="M65 8c0-6 4-8 8-8h52c4 0 8 2 8 8v22c0 6 6 10 10 14 26 27 42 62 42 103 0 5 0 9-1 14l-18 192c-3 33-28 57-61 57h-76c-33 0-58-24-61-57l-18-192c-1-5-1-9-1-14 0-41 16-76 42-103 4-4 10-8 10-14V8c0-6 4-8 8-8h56c4 0 8 2 8 8Z"
-                  fill="url(#jarGlass)"
-                  opacity="0.9"
-                />
-                <path
-                  d="M73 18h38c3 0 6 2 6 5v9c0 3-3 6-6 6H73c-3 0-6-3-6-6v-9c0-3 3-5 6-5Z"
-                  fill="#f8d58c"
-                  opacity="0.45"
-                />
-                <ellipse cx="96" cy="57" rx="112" ry="60" fill="#ffd86a" opacity="0.28" />
-                <path
-                  d="M0 160c0-38 11-73 30-102 8-12 21-19 34-19h65c14 0 26 7 34 19 19 29 30 64 30 102l-16 190c-2 24-21 42-45 42H61c-24 0-43-18-45-42L0 160Z"
-                  fill="#f6b24d"
-                  opacity="0.22"
-                />
-                <rect x="17" y="182" width="158" height="176" rx="22" fill="url(#jarLabel)" stroke="#e8cf9f" stroke-width="2" />
-                <text
-                  x="96"
-                  y="221"
-                  text-anchor="middle"
-                  font-family="DM Sans, Arial, sans-serif"
-                  font-size="17"
-                  font-weight="500"
-                  letter-spacing="0.32em"
-                  fill="#4c4b36"
-                >
-                  BEAUTIFUL
-                </text>
-                <text
-                  x="96"
-                  y="337"
-                  text-anchor="middle"
-                  font-family="DM Sans, Arial, sans-serif"
-                  font-size="17"
-                  font-weight="500"
-                  letter-spacing="0.32em"
-                  fill="#4c4b36"
-                >
-                  APPLESAUCE
-                </text>
-                <path d="M77 276c0-17 14-31 31-31s31 14 31 31-14 31-31 31-31-14-31-31Z" fill="#f08a37" />
-                <path d="M95 247c0-10 16-10 16 0v15" fill="#ffac63" opacity="0.4" />
-                <path d="M98 249c-4-12 1-21 12-29" fill="none" stroke="#6e7b55" stroke-width="3" stroke-linecap="round" />
-                <path d="M110 221c9-9 19-9 29-5-4 10-12 16-24 16" fill="#7e8a5d" />
-                <circle cx="47" cy="282" r="2.5" fill="#7f734e" />
-                <circle cx="147" cy="282" r="2.5" fill="#7f734e" />
-              </g>
-
-              <path
-                d="M545 437c17 32 34 63 46 88 7 15 12 31 12 39 0 8-7 14-17 14-8 0-14-5-17-12-17-36-33-85-44-125"
-                fill="none"
-                stroke="url(#spoonMetal)"
-                stroke-width="20"
-                stroke-linecap="round"
-              />
-              <path
-                d="M596 524c-5 4-14 8-25 9-18 2-32-5-43-18"
-                fill="none"
-                stroke="#7d6b52"
-                stroke-width="5"
-                stroke-linecap="round"
-                opacity="0.85"
-              />
-              <ellipse cx="578" cy="533" rx="36" ry="20" transform="rotate(12 578 533)" fill="#f4b553" />
-              <ellipse cx="579" cy="535" rx="30" ry="16" transform="rotate(12 579 535)" fill="#f7ca68" />
-              <ellipse cx="586" cy="538" rx="22" ry="10" transform="rotate(12 586 538)" fill="#f5d783" opacity="0.8" />
-            </g>
-
-            <path d="M562 167v-22m24 31 8-20m19 27 18-15" fill="none" stroke="#ef8f46" stroke-width="6" stroke-linecap="round" />
-          </svg>
-        </div>
-
-        <svg class="wave-divider" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
-          <path
-            d="M0 92C150 56 264 56 408 82c123 22 229 24 338-6 143-39 229-42 360-8 132 35 227 40 334 11v101H0V92Z"
-            fill="#f4ead3"
-          />
-        </svg>
+        <img class="jar-art" src="assets/jar-hero.png" alt="" aria-hidden="true" />
+        <div class="cream-wave" aria-hidden="true"></div>
       </section>
 
-      <section class="feature-section">
-        <div class="phone-figure" aria-hidden="true">
-          <div class="phone-shell">
-            <div class="phone-screen">
-              <div class="phone-top">
-                <svg class="top-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 7h14M5 12h14M5 17h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-                <svg class="top-icon bars" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M6 17V9m6 8V5m6 12v-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </div>
-
-              <div class="phone-copy">
-                <h2>Count This</h2>
-                <p>Tally anything.<br />Keep it simple.</p>
-              </div>
-
-              <div class="counter-card">
-                <span class="counter-value">27</span>
-                <div class="counter-actions">
-                  <span class="counter-dot">−</span>
-                  <span class="counter-dot plus">+</span>
-                </div>
-              </div>
-
-              <button class="new-count-button" type="button">New Count</button>
-
-              <svg class="landscape-art" viewBox="0 0 290 170" aria-hidden="true">
-                <defs>
-                  <linearGradient id="landSky" x1="0%" x2="0%" y1="0%" y2="100%">
-                    <stop offset="0%" stop-color="#fbf4df" />
-                    <stop offset="100%" stop-color="#f2e4bf" />
-                  </linearGradient>
-                </defs>
-                <rect x="0" y="0" width="290" height="170" fill="none" />
-                <circle cx="146" cy="114" r="34" fill="#ef9f47" />
-                <path
-                  d="M34 133c20-4 39 0 56 10 18 10 35 12 54 5 13-5 26-13 41-19 17-7 35-9 55-7 18 2 34 8 50 18 1 1 2 2 2 4v24H34Z"
-                  fill="#7d8451"
-                />
-                <path d="M0 145c20-9 38-12 56-10 17 2 32 8 47 17 10 6 21 10 33 11v8H0Z" fill="#a7a66e" />
-                <path d="M165 142c14-6 28-10 42-10 18 0 35 5 53 16v25h-95Z" fill="#747e50" />
-                <path d="M131 82c0 29 12 46 29 58" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M143 76c3 21 0 38-9 54" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M154 77c9 18 13 35 11 53" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M119 88c-4 14-10 27-19 39" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M175 87c7 11 13 21 17 34" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M105 66c8 5 15 9 24 12" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M175 65c10 4 18 9 26 15" fill="none" stroke="#f7cf7b" stroke-width="2.2" stroke-linecap="round" />
-                <path d="M52 114c7-13 18-20 32-22" fill="none" stroke="#efe5c7" stroke-width="10" stroke-linecap="round" opacity="0.65" />
-                <path d="M226 114c7-13 18-20 32-22" fill="none" stroke="#efe5c7" stroke-width="10" stroke-linecap="round" opacity="0.65" />
-              </svg>
+      <section class="mock-feature" aria-label="Count This">
+        <div class="phone-composite" aria-label="Count This app screen showing a photo-based count">
+          <img class="phone-art" src="assets/phone-count-this.png" alt="" aria-hidden="true" />
+          <div class="phone-overlay">
+            <div class="phone-top">
+              <span class="menu-lines" aria-hidden="true"></span>
+              <span class="chart-lines" aria-hidden="true"></span>
             </div>
+            <h3>Count This</h3>
+            <p>Take a pic.<br />Get a count.</p>
+            <div class="camera-card" aria-hidden="true">
+              <svg viewBox="0 0 154 124">
+                <rect x="13" y="18" width="128" height="88" rx="18" fill="#fffaf0" stroke="#eadcc0" stroke-width="2" />
+                <circle cx="77" cy="61" r="22" fill="#f3a75f" />
+                <circle cx="77" cy="61" r="10" fill="#fff4dc" opacity="0.8" />
+                <path d="M48 94c11-16 25-25 42-27 18-2 34 4 48 18" fill="none" stroke="#7b855d" stroke-width="8" stroke-linecap="round" />
+                <path d="M34 44h21l7-10h31l7 10h20" fill="none" stroke="#25342f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+              </svg>
+              <span>Estimated count</span>
+              <strong>27</strong>
+            </div>
+            <button class="new-count-button" type="button">New Photo</button>
+            <div class="phone-hills" aria-hidden="true"></div>
           </div>
         </div>
 
         <div class="feature-copy">
           <p class="feature-kicker">OUR FIRST APP</p>
           <h2>Count This</h2>
-          <p class="feature-lede">A clean, distraction-free counter for the things that matter.</p>
+          <p class="feature-lede">Take a picture of what you need counted. Get a count back fast.</p>
 
           <ul class="feature-list">
             <li>
               <span class="feature-icon icon-fast" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
-                  <path
-                    d="M13 2 4 14h6l-1 8 11-14h-6l-1-6Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linejoin="round"
-                  />
+                  <path d="M13 2.8 5 14h5.4l-.9 7.2L19 9.4h-5.2L13 2.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
                 </svg>
               </span>
-              <span>Fast and effortless</span>
+              <span>Snap what you need counted</span>
             </li>
             <li>
               <span class="feature-icon icon-grid" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
-                  <circle cx="7" cy="7" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7" />
-                  <circle cx="17" cy="7" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7" />
-                  <circle cx="7" cy="17" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7" />
-                  <circle cx="17" cy="17" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="7" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="17" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="7" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="17" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
                 </svg>
               </span>
-              <span>Organize with ease</span>
+              <span>Ask what to count</span>
             </li>
             <li>
               <span class="feature-icon icon-lock" aria-hidden="true">
@@ -271,7 +128,7 @@
                   <path d="M8 11V8.8a4 4 0 0 1 8 0V11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
                 </svg>
               </span>
-              <span>Private and offline-friendly</span>
+              <span>Review the count quickly</span>
             </li>
           </ul>
 
@@ -282,11 +139,10 @@
             rel="noreferrer"
           >
             <svg class="play-icon" viewBox="0 0 32 32" aria-hidden="true">
-              <path d="M4 4 20 16 4 28Z" fill="#1b9f55" />
-              <path d="M4 4 13 13 9 17 4 28Z" fill="#f5d84e" />
-              <path d="M13 13 20 16 9 17Z" fill="#4ac0f0" />
-              <path d="M13 13 20 16 28 16 20 16Z" fill="#ec6f3b" opacity="0.0" />
-              <path d="M9 17 20 16 13 13Z" fill="#f7b24f" opacity="0.92" />
+              <path d="M5 4.5v23l16.3-11.5L5 4.5Z" fill="#31b25b" />
+              <path d="M5 4.5 17.3 16 5 27.5Z" fill="#f6d34e" />
+              <path d="M17.3 16 22 12.7 5 4.5Z" fill="#3ab8e8" />
+              <path d="M17.3 16 22 19.3 5 27.5Z" fill="#f39b42" />
             </svg>
             <span>Open in Play Store</span>
           </a>
@@ -294,33 +150,7 @@
           <p class="tester-note">For testers only</p>
         </div>
 
-        <svg class="apple-outline" viewBox="0 0 220 240" aria-hidden="true">
-          <path
-            d="M124 36c12-18 35-28 53-28 0 25-12 42-36 48"
-            fill="none"
-            stroke="#6f7c57"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M101 50c-20-19-42-25-65-13-22 11-34 31-34 58 0 45 29 86 72 95 35 7 69 1 99-14 27-13 40-32 40-57 0-30-15-57-45-71-21-10-48-7-67 2Z"
-            fill="none"
-            stroke="#f18f45"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M133 17c-13 6-23 13-31 25"
-            fill="none"
-            stroke="#7d8b61"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path d="M12 218c47-14 97-18 145-14 20 2 37 2 55-1" fill="none" stroke="#f18f45" stroke-width="4" stroke-linecap="round" />
-        </svg>
+        <img class="apple-line" src="assets/apple-line.png" alt="" aria-hidden="true" />
       </section>
     </main>
     <script src="assets/site.js"></script>
