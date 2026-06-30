@@ -231,6 +231,26 @@ input {
   font-size: 0.94rem;
 }
 
+.secondary-button,
+.teaser-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 29, 24, 0.18);
+  background: rgba(255, 250, 242, 0.84);
+  font-weight: 700;
+  width: fit-content;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.secondary-button:hover,
+.teaser-button:hover {
+  transform: translateY(-1px);
+}
+
 .hero-visual {
   position: relative;
   display: grid;
@@ -268,14 +288,6 @@ input {
   color: var(--muted);
 }
 
-.feature-band {
-  margin-top: 26px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.feature,
 .teaser-panel,
 .links-intro,
 .link-card {
@@ -286,25 +298,14 @@ input {
   backdrop-filter: blur(18px);
 }
 
-.feature {
-  padding: 22px 22px 24px;
-}
-
-.feature h2 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
-}
-
-.feature p {
-  margin: 0;
-}
-
 .app-teaser {
-  margin-top: 22px;
+  margin-top: 54px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
   gap: 24px;
   align-items: stretch;
+  padding-top: 8px;
+  border-top: 1px solid rgba(27, 29, 24, 0.08);
 }
 
 .teaser-copy {
@@ -337,6 +338,11 @@ input {
   border: 1px solid rgba(27, 29, 24, 0.1);
   background: rgba(255, 248, 238, 0.8);
   font-weight: 700;
+}
+
+.teaser-button {
+  margin-top: 18px;
+  color: var(--text);
 }
 
 .teaser-panel {
@@ -470,9 +476,6 @@ input {
     order: -1;
   }
 
-  .feature-band {
-    margin-top: 20px;
-  }
 }
 
 @media (max-width: 720px) {
@@ -507,4 +510,3 @@ input {
     margin-top: 14px;
   }
 }
-
