@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beautiful Applesauce is a playful, simple launch page for Beautiful Apps and the first test app, Count This." />
+    <meta name="theme-color" content="#f4ead7" />
+    <title>Beautiful Applesauce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Beautiful Applesauce home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/hero-mark.svg" alt="" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Beautiful Applesauce</span>
+            <span class="brand-subtitle">Small apps with a little charm</span>
+          </span>
+        </a>
+        <a class="header-link" href="mailto:hello@beautifulapplesauce.com?subject=Beautiful%20Applesauce%20early%20access">Early access</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <h1>Small useful apps, served with a little surprise.</h1>
+            <p class="lead">
+              Beautiful Applesauce is the home for tiny tools that solve one clear problem and feel nice to use.
+              The first one is Count This.
+            </p>
+
+            <form class="signup" id="signup-form">
+              <label for="signup-email">Join early access</label>
+              <div class="signup-row">
+                <input id="signup-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" />
+                <button type="submit">Get the note</button>
+              </div>
+              <p class="signup-note">We will use this for early access updates and tester invites.</p>
+            </form>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <img src="assets/hero-mark.svg" alt="" class="hero-art" />
+            <div class="visual-card">
+              <p class="visual-title">Count This</p>
+              <p class="visual-body">Take a photo, count the things, and get an estimate you can trust enough to test.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-band">
+          <div class="feature">
+            <h2>Simple by design.</h2>
+            <p>One job, one page, one clear next step.</p>
+          </div>
+          <div class="feature">
+            <h2>Useful first.</h2>
+            <p>Build the app, get it into testers' hands, then decide what comes next.</p>
+          </div>
+          <div class="feature">
+            <h2>Playful enough to remember.</h2>
+            <p>A tiny bit of fun helps a small app feel alive without making it noisy.</p>
+          </div>
+        </section>
+
+        <section class="app-teaser" id="count-this">
+          <div class="teaser-copy">
+            <h2>First up: Count This</h2>
+            <p>
+              Count This is the first app in the Beautiful Apps line. It estimates how many visible items are in a photo and
+              is the test case for the public app workflow.
+            </p>
+            <ul>
+              <li>Phone-first</li>
+              <li>Alpha testing first</li>
+              <li>Simple enough to keep moving</li>
+            </ul>
+          </div>
+          <div class="teaser-panel">
+            <div class="phone-shell">
+              <div class="phone-screen">
+                <span class="chip">Count This</span>
+                <h3>Turn a photo into a count.</h3>
+                <p>Upload or snap an image, say what to count, and get a quick estimate.</p>
+                <div class="phone-stats">
+                  <span>Photo</span>
+                  <span>Estimate</span>
+                  <span>Confidence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
