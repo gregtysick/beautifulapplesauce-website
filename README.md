@@ -16,5 +16,4 @@ Beautiful Applesauce is the public teaser site and tester-link hub for Beautiful
 
 ## Publish Model
 
-This project is intended to auto-publish from GitHub on push.
-
+This project is intended to auto-deploy to Namecheap cPanel over FTPS on push.
